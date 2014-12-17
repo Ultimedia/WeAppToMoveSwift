@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterFormComponentViewController" customModule="WeAppToMoveSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="ageSlider" destination="FfA-uf-IxQ" id="L7a-id-TDe"/>
+                <outlet property="confirmPasswordField" destination="6XT-t1-fF1" id="cAo-la-M9G"/>
+                <outlet property="emailErrorLabel" destination="PnZ-Y7-zuM" id="DEH-2c-mMv"/>
+                <outlet property="emailField" destination="5oW-wR-htS" id="IfI-AK-TRj"/>
+                <outlet property="genderSelector" destination="rFs-Wo-Hdf" id="1xw-vv-h0h"/>
+                <outlet property="passwordField" destination="sBh-ij-HL8" id="9gc-D4-X1g"/>
+                <outlet property="usernameField" destination="kMm-6c-P8Z" id="Qvl-fN-Nel"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Geslacht" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-RF-gEu">
+                    <rect key="frame" x="10" y="10" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leeftijd" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvn-dP-lAe">
+                    <rect key="frame" x="10" y="99" width="57" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rFs-Wo-Hdf">
+                    <rect key="frame" x="10" y="42" width="571" height="29"/>
+                    <segments>
+                        <segment title="Man"/>
+                        <segment title="Vrouw"/>
+                    </segments>
+                </segmentedControl>
+                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="FfA-uf-IxQ">
+                    <rect key="frame" x="8" y="129" width="576" height="31"/>
+                    <connections>
+                        <action selector="slidervalueChanged:" destination="-1" eventType="valueChanged" id="CDt-In-fAu"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jouw gegevens" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X42-hl-xmR">
+                    <rect key="frame" x="10" y="179" width="120" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5oW-wR-htS">
+                    <rect key="frame" x="11" y="210" width="571" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMm-6c-P8Z">
+                    <rect key="frame" x="10" y="264" width="571" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBh-ij-HL8">
+                    <rect key="frame" x="10" y="317" width="571" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6XT-t1-fF1">
+                    <rect key="frame" x="10" y="368" width="571" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEC-7P-OZz">
+                    <rect key="frame" x="10" y="433" width="571" height="51"/>
+                    <color key="backgroundColor" red="0.83529411760000005" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Aanmelden via E-mail">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signupButton:" destination="-1" eventType="touchUpInside" id="Shz-2x-gzW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnZ-Y7-zuM">
+                    <rect key="frame" x="271" y="99" width="311" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kEC-7P-OZz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="45u-cM-DWk"/>
+                <constraint firstAttribute="trailing" secondItem="5oW-wR-htS" secondAttribute="trailing" constant="16" id="7uQ-G7-9oG"/>
+                <constraint firstItem="kMm-6c-P8Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="AIQ-wT-G2C"/>
+                <constraint firstItem="sBh-ij-HL8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="D8L-xY-HjE"/>
+                <constraint firstAttribute="trailing" secondItem="6XT-t1-fF1" secondAttribute="trailing" constant="16" id="NzJ-ZB-4fj"/>
+                <constraint firstAttribute="trailing" secondItem="kEC-7P-OZz" secondAttribute="trailing" constant="16" id="PSL-wO-Kix"/>
+                <constraint firstItem="rFs-Wo-Hdf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="UAc-Lc-0yq"/>
+                <constraint firstItem="5oW-wR-htS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="VeL-Ey-Wfa"/>
+                <constraint firstAttribute="trailing" secondItem="rFs-Wo-Hdf" secondAttribute="trailing" constant="16" id="XMh-D9-ehg"/>
+                <constraint firstAttribute="trailing" secondItem="sBh-ij-HL8" secondAttribute="trailing" constant="16" id="XNG-wI-5Je"/>
+                <constraint firstItem="FfA-uf-IxQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="cMV-OM-hUl"/>
+                <constraint firstAttribute="trailing" secondItem="FfA-uf-IxQ" secondAttribute="trailing" constant="16" id="ebd-Xs-6rX"/>
+                <constraint firstItem="6XT-t1-fF1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="me5-ev-KLu"/>
+                <constraint firstAttribute="trailing" secondItem="kMm-6c-P8Z" secondAttribute="trailing" constant="16" id="qs3-NC-NrH"/>
+                <constraint firstAttribute="trailing" secondItem="PnZ-Y7-zuM" secondAttribute="trailing" constant="18" id="wjX-Yq-kl2"/>
+            </constraints>
+            <point key="canvasLocation" x="408" y="428"/>
+        </view>
+    </objects>
+</document>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3qr-2M-Li2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +17,187 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="StW-lk-duW"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1052" y="429"/>
+        </scene>
+        <!--Pallning View Controller-->
+        <scene sceneID="fm3-21-Vfw">
+            <objects>
+                <viewController id="kmp-Jr-vK8" customClass="PallningViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CxU-cr-Ggc"/>
+                        <viewControllerLayoutGuide type="bottom" id="cOY-mf-XHX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oG9-nU-XuR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whh-gd-oue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2435" y="429"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="eVk-v0-Zru">
+            <objects>
+                <viewController storyboardIdentifier="Dashboard" title="Dashboard" id="Zmx-UF-iLc" customClass="DashboardViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ct9-Of-wdF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZJz-uB-AlG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m72-bv-N6F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glN-Zr-Got" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733" y="429"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Dlt-vX-T6I">
+            <objects>
+                <viewController storyboardIdentifier="Register" id="3YA-yR-C4n" customClass="RegisterViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Yu-ue-aeC"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVc-Iu-O1G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ew1-UE-DPf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nieuwe Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66y-Br-6xi">
+                                <rect key="frame" x="237" y="33" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1p-T2-vvE">
+                                <rect key="frame" x="16" y="28" width="38" height="30"/>
+                                <state key="normal" title="Terug">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonClickHandler:" destination="3YA-yR-C4n" eventType="touchUpInside" id="vje-Jb-dL9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.76470588235294112" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="66y-Br-6xi" secondAttribute="centerX" id="32U-Iy-rAn"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tff-rH-BKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="1384"/>
+        </scene>
+        <!--New Activity View Controller-->
+        <scene sceneID="tsm-v6-aTV">
+            <objects>
+                <viewController storyboardIdentifier="NewActivity" id="ahD-vw-2dE" customClass="NewActivityViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JAf-oz-2nY"/>
+                        <viewControllerLayoutGuide type="bottom" id="MIG-kZ-wsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yqO-fx-DFC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-FI-iLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="2129"/>
+        </scene>
+        <!--Activity Detail View Controller-->
+        <scene sceneID="GyF-ew-fp3">
+            <objects>
+                <viewController storyboardIdentifier="ActivityDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wLN-o2-haS" customClass="ActivityDetailViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eDf-6c-Rj1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aua-xt-JbX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zWT-t6-QzG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dddd" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFm-1k-gVu">
+                                <rect key="frame" x="199" y="150" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLn-A1-eef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="2121"/>
+        </scene>
+        <!--Favourite Sports View Controller-->
+        <scene sceneID="kVu-2E-Qyz">
+            <objects>
+                <viewController storyboardIdentifier="FavouriteView" id="Qxe-xF-aNn" customClass="FavouriteSportsViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QsH-zw-6aa"/>
+                        <viewControllerLayoutGuide type="bottom" id="yD7-9y-ovG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s9U-eP-En4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVU-ER-cgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="1384"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="XDA-AO-mX8">
+            <objects>
+                <viewController restorationIdentifier="Login" storyboardIdentifier="Login" id="Kpo-TW-IzC" customClass="LoginViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jGW-J4-xQA"/>
+                        <viewControllerLayoutGuide type="bottom" id="4OM-jk-uJy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2KX-hR-mL5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.80000000000000004" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DE3-2f-aVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="1384"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="Lzm-In-vsr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3qr-2M-Li2" customClass="NavigationViewController" customModule="WeAppToMoveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QxD-S3-LUV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mJy-Su-lAO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtg-WD-83v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="1090"/>
         </scene>
     </scenes>
 </document>
